@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App Banque</string>
+    <string-array name="format_options">
+        <item>JSON</item>
+        <item>XML</item>
+    </string-array>
+</resources>

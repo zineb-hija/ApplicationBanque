@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <!-- En-tête -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BanqueApp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:background="@color/purple_500"
+        android:gravity="center" />
+
+    <!-- Bouton Ajouter -->
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Account"
+        android:textColor="@android:color/white"
+        android:background="@color/purple_500"
+        android:layout_margin="16dp" />
+
+    <!-- Liste des comptes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:scrollbars="vertical" />
+
+    <!-- Sélecteur de format JSON/XML -->
+    <Spinner
+        android:id="@+id/spinner_format"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/format_options"
+        android:layout_margin="16dp" />
+</LinearLayout>
